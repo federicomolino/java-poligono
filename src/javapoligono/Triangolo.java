@@ -24,7 +24,7 @@ public class Triangolo implements Poligono{
     }
 
     @Override
-    public void calcolaArea() {
+    public final void calcolaArea() {
         if (base == 0 || altezza == 0){
             System.out.println("I valori di base e altezza non possono essere 0");
         }
@@ -33,7 +33,7 @@ public class Triangolo implements Poligono{
     }
 
     @Override
-    public void calcolaPerimetro() {
+    public final void calcolaPerimetro() {
         if (lato1 == 0 || lato2 == 0 || lato3 == 0) {
             System.out.println("Il valore dei lati non può essere 0");
         }else {
